@@ -1,0 +1,14 @@
+class Solution {
+    public String maximumOddBinaryNumber(String s) {
+        int cone = 0, czero = 0 ;
+        for(char ch : s.toCharArray()){
+            if (ch == '1') cone++;
+            else if (ch == '0') czero++;
+        }
+        StringBuilder sb = new StringBuilder();
+        while (--cone != 0) sb.append('1');
+        while (czero-- !=0 ) sb.append('0');
+        sb.append('1');
+        return sb.toString();
+    }
+}
