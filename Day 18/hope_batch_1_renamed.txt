@@ -1,0 +1,2 @@
+This is Hope Batch 1Here, we have turned the File Writer with true to append the data
+Finally , I have closed the appending and writing operations
